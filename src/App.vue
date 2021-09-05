@@ -9,10 +9,10 @@
       </transition>
     </router-view>
     <Tabbar placeholder route v-show="showFooter">
-      <TabbarItem icon="home-o" replace to="/">Home</TabbarItem>
-      <TabbarItem icon="search" replace to="/about">About</TabbarItem>
-      <TabbarItem icon="friends-o" replace to="/todoList">ToDo</TabbarItem>
-      <TabbarItem icon="setting-o" replace to="/luckdraw">LuckDraw</TabbarItem>
+      <TabbarItem icon="home-o" replace to="/">首页</TabbarItem>
+      <TabbarItem icon="orders-o" replace to="/about">订单</TabbarItem>
+      <TabbarItem icon="user-circle-o" replace to="/todoList">我的</TabbarItem>
+      <!-- <TabbarItem icon="setting-o" replace to="/luckdraw">我的</TabbarItem> -->
     </Tabbar>
   </div>
 </template>
