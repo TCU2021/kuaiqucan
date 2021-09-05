@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
-    <NavBar title="标题" left-text="返回" right-text="按钮" left-arrow />
+    <NavBar :title="$route.meta?.title" />
     <router-view v-slot="{ Component }">
-      <keep-alive>
-        <transition>
+      <transition>
+        <keep-alive>
           <component :is="Component" />
-        </transition>
-      </keep-alive>
+        </keep-alive>
+      </transition>
     </router-view>
     <Tabbar placeholder route v-show="showFooter">
       <TabbarItem icon="home-o" replace to="/">Home</TabbarItem>
