@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <NavBar title="标题" left-text="返回" right-text="按钮" left-arrow />
     <router-view v-slot="{ Component }">
       <transition>
         <component :is="Component" />
@@ -16,12 +17,22 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Tabbar, TabbarItem } from "vant";
+import { Tabbar, TabbarItem, NavBar, Toast } from "vant";
 export default defineComponent({
   name: "App",
   components: {
     Tabbar,
     TabbarItem,
+    NavBar,
+    Toast
+  },
+  methods: {
+    onClickLeft() {
+      Toast('返回');
+    },
+    onClickRight() {
+      Toast('按钮');
+    },
   },
   computed: {
     showFooter() {
