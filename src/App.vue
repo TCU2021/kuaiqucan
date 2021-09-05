@@ -2,9 +2,11 @@
   <div class="wrapper">
     <NavBar title="标题" left-text="返回" right-text="按钮" left-arrow />
     <router-view v-slot="{ Component }">
-      <transition>
-        <component :is="Component" />
-      </transition>
+      <keep-alive>
+        <transition>
+          <component :is="Component" />
+        </transition>
+      </keep-alive>
     </router-view>
     <Tabbar placeholder route v-show="showFooter">
       <TabbarItem icon="home-o" replace to="/">Home</TabbarItem>
@@ -26,18 +28,10 @@ export default defineComponent({
     NavBar,
     Toast
   },
-  methods: {
-    onClickLeft() {
-      Toast('返回');
-    },
-    onClickRight() {
-      Toast('按钮');
-    },
-  },
   computed: {
     showFooter() {
       return this.$route.path.split("/").length < 3;
     },
-  }
+  },
 })
 </script>
