@@ -16,10 +16,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { Tabbar, TabbarItem, NavBar, Toast } from "vant";
+import { defineComponent } from 'vue'
+import { Tabbar, TabbarItem, NavBar, Toast } from 'vant'
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
     Tabbar,
     TabbarItem,
@@ -28,8 +28,8 @@ export default defineComponent({
   },
   computed: {
     showFooter() {
-      return this.$route.path.split("/").length < 3;
+      return this.$route.path.split('/').length < 3
     },
   },
-});
+})
 </script>

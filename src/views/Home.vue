@@ -38,7 +38,7 @@ export default defineComponent({
       data.result = result;
     };
     const result = watch(data, () => {
-      window.location.href=data.result
+      window.location.href = data.result
     });
     return { data, onDecode };
   },
