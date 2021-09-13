@@ -57,6 +57,11 @@
   resolved "https://registry.nlark.com/@types/estree/download/@types/estree-0.0.48.tgz#18dc8091b285df90db2f25aa7d906cfc394b7f74"
   integrity sha1-GNyAkbKF35DbLyWqfZBs/DlLf3Q=
 
+"@types/node@^16.7.10":
+  version "16.9.1"
+  resolved "https://registry.nlark.com/@types/node/download/@types/node-16.9.1.tgz?cache=0&sync_timestamp=1631217813487&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.9.1.tgz#0611b37db4246c937feef529ddcc018cf8e35708"
+  integrity sha1-BhGzfbQkbJN/7vUp3cwBjPjjVwg=
+
 "@vant/icons@^1.7.0":
   version "1.7.0"
   resolved "https://registry.nlark.com/@vant/icons/download/@vant/icons-1.7.0.tgz#02d427532a8142c35db159da9c364fe6890c3ac9"
@@ -608,6 +613,11 @@ jsonc-parser@^3.0.0:
   version "3.0.0"
   resolved "https://registry.nlark.com/jsonc-parser/download/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
   integrity sha1-q914VwHH5+rKip7IzwcMpRp0WiI=
+
+jsqr@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.nlark.com/jsqr/download/jsqr-1.4.0.tgz#8efb8d0a7cc6863cb6d95116b9069123ce9eb2d1"
+  integrity sha1-jvuNCnzGhjy22VEWuQaRI86estE=
 
 jstransformer@1.0.0:
   version "1.0.0"
@@ -1254,6 +1264,13 @@ vue-tsc@^0.2.2:
   integrity sha1-Er9I48mx5VPTGq0MZBci1dFYQdg=
   dependencies:
     vscode-vue-languageservice "^0.27.0"
+
+vue3-qr-reader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/vue3-qr-reader/download/vue3-qr-reader-1.0.0.tgz#a43c0f9badd39af611f37a92a8dd18e2150f41c5"
+  integrity sha1-pDwPm63TmvYR83qSqN0Y4hUPQcU=
+  dependencies:
+    jsqr "^1.4.0"
 
 vue@^3.2.6:
   version "3.2.8"

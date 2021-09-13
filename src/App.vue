@@ -3,9 +3,7 @@
     <NavBar :title="$route.meta?.title" />
     <router-view v-slot="{ Component }">
       <transition>
-        <keep-alive>
-          <component :is="Component" />
-        </keep-alive>
+        <component :is="Component" />
       </transition>
     </router-view>
     <Tabbar placeholder route v-show="showFooter">
@@ -26,12 +24,12 @@ export default defineComponent({
     Tabbar,
     TabbarItem,
     NavBar,
-    Toast
+    Toast,
   },
   computed: {
     showFooter() {
       return this.$route.path.split("/").length < 3;
     },
   },
-})
+});
 </script>
