@@ -2,19 +2,22 @@
   <div>
     <div class="background">
       <div class="hello">
-        <div class="title">欢迎你：用户名</div>
+        <div class="title">欢迎你：{{ data.user.username }}</div>
         <div class="title">当前待取餐：</div>
       </div>
       <div class="todo">
         <div class="content">
-          <div class="order">订单编号：1487123172</div>
-          <div class="telephone">手机号：156****7452</div>
-          <div class="state">当前状态：待取餐</div>
+          <div class="order">订单编号：{{ data.user.todo.oid }}</div>
+          <div class="telephone">手机号：{{ data.user.todo.telephone }}</div>
+          <div class="state">当前状态：{{ data.user.todo.state }}</div>
         </div>
       </div>
       <div class="qrReader">
-        <qr-stream @decode="onDecode" class="camera"></qr-stream>
-        <div class="text">请由此扫描二维码</div>
+        <div class="qrBg" @click="toScan"></div>
+        <div class="qrIcon">
+          <img src="../assets/scan_icon.png" />
+          <div class="text">请点击此处扫描二维码</div>
+        </div>
       </div>
     </div>
   </div>
@@ -23,24 +26,26 @@
 <script lang="ts">
 import { defineComponent, onMounted, reactive, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { QrStream } from 'vue3-qr-reader'
 
 export default defineComponent({
-  components: { QrStream },
-
   setup() {
     const router = useRouter()
     const data = reactive({
       result: '',
       error: '',
+      user: {
+        username: '用户名',
+        todo: {
+          oid: '1487123172',
+          telephone: '156****7452',
+          state: '待取餐',
+        },
+      },
     })
-    const onDecode = (result: any) => {
-      data.result = result
+    const toScan = () => {
+      router.push('/scan')
     }
-    const result = watch(data, () => {
-      window.location.href = data.result
-    })
-    return { data, onDecode }
+    return { data, toScan }
   },
 })
 </script>
@@ -59,9 +64,9 @@ export default defineComponent({
   margin: 50px 0;
 }
 .background {
-  height: 85.5vh;
+  height: 87vh;
   width: 100vw;
-  background-image: url("../assets/background.jpg");
+  background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -72,13 +77,32 @@ export default defineComponent({
   width: 40vh;
   text-align: left;
 }
+.hello {
+  padding: 20px;
+}
 .title {
   font-size: 30px;
-  margin: 10px 0;
 }
 .order,
 .telephone,
 .state {
   font-size: 25px;
+}
+.qrBg {
+  left: 50%;
+  width: 40vh;
+  height: 40vh;
+  margin-left: -20vh;
+  position: absolute;
+  border-radius: 20px;
+  opacity: 20%;
+  background-color: white;
+}
+.qrIcon {
+  height: 30vh;
+  padding: 5vh;
+  margin: 0 8vh;
+}
+.qrReader {
 }
 </style>
