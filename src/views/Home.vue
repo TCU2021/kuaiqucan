@@ -21,28 +21,28 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, reactive, watch } from "vue";
-import { useRouter } from "vue-router";
-import { QrStream } from "vue3-qr-reader";
+import { defineComponent, onMounted, reactive, watch } from 'vue'
+import { useRouter } from 'vue-router'
+import { QrStream } from 'vue3-qr-reader'
 
 export default defineComponent({
   components: { QrStream },
 
   setup() {
-    const router = useRouter();
+    const router = useRouter()
     const data = reactive({
-      result: "",
-      error: "",
-    });
+      result: '',
+      error: '',
+    })
     const onDecode = (result: any) => {
-      data.result = result;
-    };
+      data.result = result
+    }
     const result = watch(data, () => {
       window.location.href = data.result
-    });
-    return { data, onDecode };
+    })
+    return { data, onDecode }
   },
-});
+})
 </script>
 
 <style scoped>
