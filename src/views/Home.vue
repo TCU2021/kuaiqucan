@@ -73,6 +73,8 @@ export default defineComponent({
 }
 
 .content {
+  z-index: 1;
+  padding-top: 20px;
   margin: 20px auto;
   width: 40vh;
   text-align: left;
@@ -90,17 +92,25 @@ export default defineComponent({
 }
 .qrBg {
   left: 50%;
-  width: 40vh;
+  width: 70vw;
   height: 40vh;
-  margin-left: -20vh;
+  margin-left: -35vw;
   position: absolute;
   border-radius: 20px;
   opacity: 20%;
   background-color: white;
 }
 .qrIcon {
+  padding-top: 5vh;
+  width: 100vw;
   height: 30vh;
-  padding: 5vh;
-  margin: 0 8vh;
+}
+.todo {
+  margin: 0 auto;
+  width: 90vw;
+  height: 18vh;
+  border-radius: 20px;
+  opacity: 50%;
+  background-color: white;
 }
 </style>
