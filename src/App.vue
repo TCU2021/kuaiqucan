@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <NavBar :title="$route.meta?.title" />
+    <NavBar :title="'' + route.meta?.title" />
     <router-view v-slot="{ Component }">
       <transition>
         <keep-alive>
@@ -8,7 +8,7 @@
         </keep-alive>
       </transition>
     </router-view>
-    <Tabbar placeholder route v-show="showFooter">
+    <Tabbar placeholder route v-show="showFooter()">
       <TabbarItem icon="home-o" replace to="/">首页</TabbarItem>
       <TabbarItem icon="orders-o" replace to="/about">订单</TabbarItem>
       <TabbarItem icon="user-circle-o" replace to="/todoList">我的</TabbarItem>
@@ -20,6 +20,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Tabbar, TabbarItem, NavBar, Toast } from 'vant'
+import { useRoute } from 'vue-router'
 export default defineComponent({
   name: 'App',
   components: {
@@ -28,10 +29,12 @@ export default defineComponent({
     NavBar,
     Toast,
   },
-  computed: {
-    showFooter() {
-      return this.$route.path.split('/').length < 3
-    },
+  setup() {
+    const route = useRoute()
+    const showFooter = () => {
+      return route.path.split('/').length < 3
+    }
+    return { showFooter, route }
   },
 })
 </script>

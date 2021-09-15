@@ -103,6 +103,4 @@ export default defineComponent({
   padding: 5vh;
   margin: 0 8vh;
 }
-.qrReader {
-}
 </style>
