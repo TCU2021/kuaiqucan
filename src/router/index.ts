@@ -9,6 +9,14 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import(/* webpackChunkName: "home" */ '@views/Home.vue'),
   },
+  {
+    path: '/scan',
+    name: 'Scan',
+    meta: {
+      title: '请扫描二维码',
+    },
+    component: () => import(/* webpackChunkName: "scan" */ '@views/Scan.vue'),
+  },
 ]
 
 const router = createRouter({
