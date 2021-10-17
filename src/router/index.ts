@@ -16,6 +16,13 @@ const routes: Array<RouteRecordRaw> = [
       title: '请扫描二维码',
     },
     component: () => import(/* webpackChunkName: "scan" */ '@views/Scan.vue'),
+  },  {
+    path: '/besure',
+    name: 'Besure',
+    meta: {
+      title: '确认',
+    },
+    component: () => import(/* webpackChunkName: "after-scan" */ '@views/AfterScan.vue'),
   },
 ]
 

@@ -13,14 +13,14 @@
 </template>
 <script lang="ts">
 import { defineComponent, reactive, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { QrStream } from 'vue3-qr-reader'
-
 export default defineComponent({
   components: { QrStream },
 
   setup() {
     const route = useRoute()
+    const router = useRouter()
     const data = reactive({
       result: '',
       show: true,
@@ -29,7 +29,8 @@ export default defineComponent({
       data.result = result
     }
     const result = watch(data, () => {
-      window.location.href = data.result
+      router.push("/besure")
+      // window.location.href = data.result
     })
     const routeWatcher = watch(route, () => {
       if (route.path === '/scan') {
