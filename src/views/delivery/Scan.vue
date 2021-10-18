@@ -29,11 +29,11 @@ export default defineComponent({
       data.result = result
     }
     const result = watch(data, () => {
-      router.push("/besure")
+      router.push("/scanInfo")
       // window.location.href = data.result
     })
     const routeWatcher = watch(route, () => {
-      if (route.path === '/scan') {
+      if (route.path === '/dScan') {
         data.show = true
       } else {
         data.show = false
