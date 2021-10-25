@@ -5,10 +5,10 @@
       <div class="title" style="font-size: 30px">123456</div>
       <div class="title">是否开箱？</div>
       <div class="buttons">
-        <el-button class="button" type="primary" @click="sure">确认</el-button>
+        <van-button class="button" type="primary" @click="sure">确认</van-button>
       </div>
       <div class="buttons">
-        <el-button class="button" type="danger" @click="cancel">取消</el-button>
+        <van-button class="button" type="danger" @click="cancel">取消</van-button>
       </div>
     </div>
   </div>
