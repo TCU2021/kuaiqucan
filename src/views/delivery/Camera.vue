@@ -16,17 +16,18 @@
             v-show="!data.isPhoto"
           />
           <div v-show="data.isPhoto" class="setImage">
-            <div class="title center" style="color: white; text-align: center">是否提交</div>
+            <div class="title">是否提交</div>
             <div class="buttons">
-              <el-button @click="end">是</el-button>
-              <el-button
+              <van-button class="button" type="success" @click="end">是</van-button>
+              <van-button
+                class="button"
                 @click="
                   () => {
                     initData()
                     openCamera()
                   }
                 "
-                >否</el-button
+                >否</van-button
               >
             </div>
           </div>
@@ -184,6 +185,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.title {
+  margin: 0 auto;
+  text-align: center;
+  width: 20vw;
+  background: white;
+}
 .container {
   height: 87vh;
   width: 100vw;
@@ -198,8 +205,13 @@ export default defineComponent({
   font-size: 30px;
 }
 .buttons {
+  padding-top: 2vh;
   display: flex;
   justify-content: center;
+}
+.button {
+  margin: 0 10px;
+  width: 100px;
 }
 .tx_img {
   width: 100vw;
@@ -221,7 +233,7 @@ export default defineComponent({
 .camera_outer {
   position: relative;
   overflow: hidden;
-  background: url('../../assets/img/user_0608_04.png') no-repeat center;
+  background: no-repeat center;
   background-size: 100%;
 }
 video,

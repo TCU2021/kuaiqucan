@@ -29,7 +29,7 @@ export default defineComponent({
       data.result = result
     }
     const result = watch(data, () => {
-      router.push("/scanInfo")
+      router.push('/scanInfo')
       // window.location.href = data.result
     })
     const routeWatcher = watch(route, () => {
@@ -45,6 +45,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.container {
+  background-image: url('../../assets/background.jpg');
+}
 .border,
 .container,
 .qrReader {

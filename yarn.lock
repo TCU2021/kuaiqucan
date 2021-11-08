@@ -39,11 +39,6 @@
   resolved "https://registry.nlark.com/@emmetio/scanner/download/@emmetio/scanner-1.0.0.tgz#065b2af6233fe7474d44823e3deb89724af42b5f"
   integrity sha1-Blsq9iM/50dNRII+PeuJckr0K18=
 
-"@popperjs/core@^2.10.1":
-  version "2.10.2"
-  resolved "https://registry.npmmirror.com/@popperjs/core/download/@popperjs/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
-  integrity sha1-B5jAM1Hw3qGlpMq93yalWny+5ZA=
-
 "@popperjs/core@^2.9.2":
   version "2.10.1"
   resolved "https://registry.nlark.com/@popperjs/core/download/@popperjs/core-2.10.1.tgz?cache=0&sync_timestamp=1630646772440&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40popperjs%2Fcore%2Fdownload%2F%40popperjs%2Fcore-2.10.1.tgz#728ecd95ab207aab8a9a4e421f0422db329232be"
@@ -244,21 +239,6 @@
   resolved "https://registry.nlark.com/@vue/shared/download/@vue/shared-3.2.8.tgz#2f918e330aeb3f56ab1031ca60a5b30672512457"
   integrity sha1-L5GOMwrrP1arEDHKYKWzBnJRJFc=
 
-"@vueuse/core@~6.1.0":
-  version "6.1.0"
-  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-6.1.0.tgz#8137c291cf49b11c2deda4d5079096e55b36fc28"
-  integrity sha1-gTfCkc9JsRwt7aTVB5CW5Vs2/Cg=
-  dependencies:
-    "@vueuse/shared" "6.1.0"
-    vue-demi "*"
-
-"@vueuse/shared@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-6.1.0.tgz#1375fd41acefe52f9a1842f3c6a8a348786535ba"
-  integrity sha1-E3X9Qazv5S+aGELzxqijSHhlNbo=
-  dependencies:
-    vue-demi "*"
-
 acorn@^7.1.1:
   version "7.4.1"
   resolved "https://registry.nlark.com/acorn/download/acorn-7.4.1.tgz?cache=0&sync_timestamp=1624526847094&other_urls=https%3A%2F%2Fregistry.nlark.com%2Facorn%2Fdownload%2Facorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
@@ -273,13 +253,6 @@ assert-never@^1.2.1:
   version "1.2.1"
   resolved "https://registry.nlark.com/assert-never/download/assert-never-1.2.1.tgz#11f0e363bf146205fb08193b5c7b90f4d1cf44fe"
   integrity sha1-EfDjY78UYgX7CBk7XHuQ9NHPRP4=
-
-async-validator@^4.0.3:
-  version "4.0.5"
-  resolved "https://registry.npmmirror.com/async-validator/download/async-validator-4.0.5.tgz#7e60dcebbecbe72ddc659f3972bf81181b824559"
-  integrity sha1-fmDc677L5y3cZZ85cr+BGBuCRVk=
-  dependencies:
-    url-regex "^5.0.0"
 
 axios@^0.23.0:
   version "0.23.0"
@@ -401,11 +374,6 @@ csstype@^2.6.8:
   resolved "https://registry.nlark.com/csstype/download/csstype-2.6.17.tgz#4cf30eb87e1d1a005d8b6510f95292413f6a1c0e"
   integrity sha1-TPMOuH4dGgBdi2UQ+VKSQT9qHA4=
 
-dayjs@^1.10.7:
-  version "1.10.7"
-  resolved "https://registry.nlark.com/dayjs/download/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
-  integrity sha1-LPX5Gt0oEWdIRAhmoKHSbzps5Gg=
-
 debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.nlark.com/debug/download/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -462,20 +430,6 @@ dot-case@^3.0.4:
   dependencies:
     no-case "^3.0.4"
     tslib "^2.0.3"
-
-element-plus@^1.1.0-beta.20:
-  version "1.1.0-beta.20"
-  resolved "https://registry.npmmirror.com/element-plus/download/element-plus-1.1.0-beta.20.tgz?cache=0&sync_timestamp=1633936517299&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Felement-plus%2Fdownload%2Felement-plus-1.1.0-beta.20.tgz#59523c99a88ca4881d899ba8bb81c4a9273ed822"
-  integrity sha1-WVI8maiMpIgdiZuou4HEqSc+2CI=
-  dependencies:
-    "@popperjs/core" "^2.10.1"
-    "@vueuse/core" "~6.1.0"
-    async-validator "^4.0.3"
-    dayjs "^1.10.7"
-    lodash "^4.17.21"
-    memoize-one "^5.2.1"
-    normalize-wheel-es "^1.1.0"
-    resize-observer-polyfill "^1.5.1"
 
 emmet@^2.3.0:
   version "2.3.4"
@@ -617,11 +571,6 @@ image-size@~0.5.0:
   resolved "https://registry.nlark.com/image-size/download/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
   integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
 
-ip-regex@^4.1.0:
-  version "4.3.0"
-  resolved "https://registry.nlark.com/ip-regex/download/ip-regex-4.3.0.tgz#687275ab0f57fa76978ff8f4dddc8a23d5990db5"
-  integrity sha1-aHJ1qw9X+naXj/j03dyKI9WZDbU=
-
 is-core-module@^2.2.0:
   version "2.6.0"
   resolved "https://registry.nlark.com/is-core-module/download/is-core-module-2.6.0.tgz?cache=0&sync_timestamp=1629224758563&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-core-module%2Fdownload%2Fis-core-module-2.6.0.tgz#d7553b2526fe59b92ba3e40c8df757ec8a709e19"
@@ -721,11 +670,6 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.nlark.com/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.nlark.com/lodash/download/lodash-4.17.21.tgz?cache=0&sync_timestamp=1622685830565&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flodash%2Fdownload%2Flodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
-
 lower-case@^2.0.2:
   version "2.0.2"
   resolved "https://registry.nlark.com/lower-case/download/lower-case-2.0.2.tgz#6fa237c63dbdc4a82ca0fd882e4722dc5e634e28"
@@ -754,11 +698,6 @@ make-dir@^2.1.0:
   dependencies:
     pify "^4.0.1"
     semver "^5.6.0"
-
-memoize-one@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.npmmirror.com/memoize-one/download/memoize-one-5.2.1.tgz?cache=0&sync_timestamp=1634275947899&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmemoize-one%2Fdownload%2Fmemoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
-  integrity sha1-gzeqPEM1WBg57AHD1ZQJDOvo8A4=
 
 merge-source-map@^1.1.0:
   version "1.1.0"
@@ -808,11 +747,6 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
-
-normalize-wheel-es@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/normalize-wheel-es/download/normalize-wheel-es-1.1.0.tgz#db017af1dd5d4c6222c07ae38bc224049d25861e"
-  integrity sha1-2wF68d1dTGIiwHrji8IkBJ0lhh4=
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -1047,11 +981,6 @@ request-light@^0.5.4:
   resolved "https://registry.nlark.com/request-light/download/request-light-0.5.4.tgz#497a98c6d8ae49536417a5e2d7f383b934f3e38c"
   integrity sha1-SXqYxtiuSVNkF6Xi1/ODuTTz44w=
 
-resize-observer-polyfill@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.nlark.com/resize-observer-polyfill/download/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
-
 resolve@^1.15.1, resolve@^1.20.0:
   version "1.20.0"
   resolved "https://registry.nlark.com/resolve/download/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
@@ -1119,11 +1048,6 @@ string-hash@^1.1.1:
   resolved "https://registry.nlark.com/string-hash/download/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
   integrity sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
 
-tlds@^1.203.0:
-  version "1.224.0"
-  resolved "https://registry.npmmirror.com/tlds/download/tlds-1.224.0.tgz?cache=0&sync_timestamp=1633695607916&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftlds%2Fdownload%2Ftlds-1.224.0.tgz#dc9a5b0bda0708af0302114f6e24458770c5af01"
-  integrity sha1-3JpbC9oHCK8DAhFPbiRFh3DFrwE=
-
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.nlark.com/to-fast-properties/download/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
@@ -1167,14 +1091,6 @@ upper-case@^2.0.2:
   integrity sha1-2JgQgj+qsd8VSbfZenb4Ziuub3o=
   dependencies:
     tslib "^2.0.3"
-
-url-regex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.nlark.com/url-regex/download/url-regex-5.0.0.tgz#8f5456ab83d898d18b2f91753a702649b873273a"
-  integrity sha1-j1RWq4PYmNGLL5F1OnAmSbhzJzo=
-  dependencies:
-    ip-regex "^4.1.0"
-    tlds "^1.203.0"
 
 util-deprecate@^1.0.2:
   version "1.0.2"
@@ -1346,11 +1262,6 @@ vscode-vue-languageservice@^0.27.0:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-pug-languageservice "^0.27.13"
     vscode-typescript-languageservice "^0.27.13"
-
-vue-demi@*:
-  version "0.11.4"
-  resolved "https://registry.nlark.com/vue-demi/download/vue-demi-0.11.4.tgz#6101992fe4724cf5634018a16e953f3052e94e2a"
-  integrity sha1-YQGZL+RyTPVjQBihbpU/MFLpTio=
 
 vue-router@^4.0.11:
   version "4.0.11"

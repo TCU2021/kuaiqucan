@@ -19,7 +19,7 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 import { defineComponent, reactive, watch, nextTick } from 'vue'
 import axios from 'axios'
 import { useRouter, useRoute } from 'vue-router'
